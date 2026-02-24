@@ -1,6 +1,6 @@
 linux
 
-ls pwd cd rm cp dd
+ls pwd cd rm cp mv sudo mkdir touch 
 
 /home	файлы пользователей
 /etc	конфиги
