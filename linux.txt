@@ -1,0 +1,9 @@
+linux
+
+ls pwd cd rm cp dd
+
+/home	файлы пользователей
+/etc	конфиги
+/var	логи
+/usr	программы
+/bin	базовые команды
