@@ -11,62 +11,62 @@
 ## Просмотр пользователей
 `cat /etc/passwd`
 + Через системную базу (предпочтительно):
-> `getent passwd username`
+`getent passwd username`
 + Текущий пользователь:
-> `whoami`
+`whoami`
 + Информация о пользователе:
-> `id username`
+`id username`
 + Коротко про getent
 `getent` 
 > команда для получения данных о пользователях и группах из системной базы (включая LDAP).
 ---
 ## Cоздание и редактирование пользователя:
 + Создание пользователя
-> `sudo useradd username`
+`sudo useradd username`
 + Создать с домашней директорией:
-> `sudo useradd -m username`
+`sudo useradd -m username`
 + Создать с указанием оболочки:
-> `sudo useradd -m -s /bin/bash username`
+`sudo useradd -m -s /bin/bash username`
 + Установка пароля
-> `sudo passwd username`
+`sudo passwd username`
 ---
 + Переименовать пользователя:
-> `sudo usermod -l newname oldname`
+`sudo usermod -l newname oldname`
 + Переименовать домашнюю папку:
-> `sudo usermod -d /home/newname -m newname`
+`sudo usermod -d /home/newname -m newname`
 + Добавить в группу:
-> `sudo usermod -g groupname username`
+`sudo usermod -g groupname username`
 > используй -aG, иначе удалятся другие группы.
 ---
 + Удаление пользователя
-> `sudo userdel username`
+`sudo userdel username`
 + Удалить вместе с домашней папкой:
-> `sudo userdel -r username`
+`sudo userdel -r username`
 ---
 ## Управление группами
 + Просмотр групп
-> `cat /etc/group`
+`cat /etc/group`
 + Через системную базу:
-> `getent group`
+`getent group`
 + Группы текущего пользователя:
-> `groups`
+`groups`
 + Создание группы:
-> `sudo groupadd groupname`
+`sudo groupadd groupname`
 + Переименование группы
-> `sudo groupmod -n newname oldname`
+`sudo groupmod -n newname oldname`
 + Удаление группы:
-> `sudo groupdel groupname`
+`sudo groupdel groupname`
 ---
 + Изменение владельца
-> `sudo chown username file.txt`
+`sudo chown username file.txt`
 + Изменить владельца и группу:
-> `sudo chown username:groupname file.txt`
+`sudo chown username:groupname file.txt`
 + Изменить группу файла:
-> `sudo chgrp groupname file.txt`
+`sudo chgrp groupname file.txt`
 + Проверить пользователя:
-> `getent passwd username`
+`getent passwd username`
 + Проверить группу:
-> `getent group groupname`
+`getent group groupname`
 > Если запись существует — команда выведет строку.
 ---
 ## Конфигурация пользователей:
@@ -78,32 +78,30 @@
 |/etc/group|список групп|
 |/etc/login.defs|настройки по умолчанию (UID, срок действия пароля)|
 |/etc/skel/|шаблон файлов для новых пользователей|
-
+---
 + Структура записи в /etc/passwd
-
 + Пример:
 > user:x:1001:1001:User Name:/home/user:/bin/bash
-
 + Поля:
 > имя пользователя : пароль (x — хранится в /etc/shadow) : UID : GID : описание : домашняя директория : оболочка (shell) ;
 ---
 ### Домашняя директория:
 + Создаётся при использовании -m:
-> `sudo useradd -m username`
+`sudo useradd -m username`
 + Шаблон файлов копируется из:
-> `/etc/skel/`
+`/etc/skel/`
 ---
 ### Смена оболочки (shell):
 + Посмотреть доступные оболочки:
-> `cat /etc/shells`
+`cat /etc/shells`
 + Изменить оболочку:
-> `sudo usermod -s /bin/bash username`
+`sudo usermod -s /bin/bash username`
 ---
 ### Настройка срока действия пароля:
 + Посмотреть параметры:
-> `chage -l username`
+`chage -l username`
 +Изменить срок действия:
-> `sudo chage username`
+`sudo chage username`
 ---
 ## Права доступа:
 Просмотр прав:
