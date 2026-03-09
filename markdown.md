@@ -1,5 +1,3 @@
-## Hi bustardzz 👋
-
 # ***Разметка Markdown***
 
 ## Что такое Markdown:
