@@ -19,7 +19,7 @@
 
 ---
 
-## Запрос к API
+## Запрос к API:
 
 + Пример: 
 
@@ -43,15 +43,22 @@
 + Пример ответа сервера:
 
 json
-`{
-  "status": "success",
-  "country": "Russia",
-  "countryCode": "RU",
-  "region": "MOW",
-  "regionName": "Moscow",
-  "city": "Moscow",
-  "zip": "12345"
-}`
+`{`
+  
+  `"status": "success",`
+  
+  `"country": "Russia",`
+  
+  `"countryCode": "RU",`
+  
+  `"region": "MOW",`
+  
+  `"regionName": "Moscow",`
+  
+  `"city": "Moscow",`
+  
+  `"zip": "12345"`
+`}`
 
 > API возвращает данные в формате JSON.
 
@@ -78,7 +85,7 @@ json
 
 ## Примеры популярных API:
 
-> Некоторые крупные сервисы предоставляют свои API:
++ Некоторые крупные сервисы предоставляют свои API:
 
 1. YouTube Data API
 
