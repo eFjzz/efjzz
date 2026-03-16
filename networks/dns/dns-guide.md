@@ -1,7 +1,3 @@
-# DNS Protocol 
-
----
-
 # DNS Protocol
 
 + DNS работает по модели **клиент–сервер**.
