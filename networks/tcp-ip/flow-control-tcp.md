@@ -1,7 +1,4 @@
 # Flow and congestion control in TCP
----
-
-# Управление потоком и перегрузкой в TCP
 
 ---
 
