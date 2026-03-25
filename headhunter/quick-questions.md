@@ -1,6 +1,8 @@
-Quick question for Interview
+### Quick question for Interview
 
 + Здравствуйте, меня зовут Александр, 20 лет, живу в Белграде. Работал два года в хостинговой компании Beget: с позиции TechSupport On-Call до TechSupport L2.
+
+---
 
 + Почему выбрали компанию
 
